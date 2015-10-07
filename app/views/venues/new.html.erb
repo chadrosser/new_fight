@@ -1,0 +1,13 @@
+<a href="/">logout</a> | <a href="/dashboard">go back</a>
+<h1>Create a Venue</h1>
+<form action="/venues/create" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<p>Name: <input type="text" name="name"></p>
+ 	<p>Address:<input type="text" name="location"></p>
+	<p>City:<input type="text" name="city"></p>
+	<p>State<input type="text" name="state"></p>
+	<p>Country:<input type="text" name="country"></p>
+	<p>Zipcode:<input type="text" name="zipcode"></p>
+	<p>Description:<input type="text" name="description"></p>
+	<p><input type="submit" value="Submit"></p>
+</form>

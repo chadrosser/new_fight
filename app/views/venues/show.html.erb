@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Venue</title>
+	</head>
+	<a href="/dashboard">go back</a>
+	<body>
+		<p>Name:<%= @venue.name %></p>
+		<p>Address:<%= @venue.location %></p>
+		<p>City:<%= @venue.city %></p>
+		<p>State:<%= @venue.state %></p>
+		<p>Country:<%= @venue.country %></p>
+		<p>Zipcode:<%= @venue.zipcode %></p>
+		<p>Description:<%= @venue.description %></p>
+
+		<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@venue.lat}%2C#{@venue.lng}" %>
+	</body>
+</html>
